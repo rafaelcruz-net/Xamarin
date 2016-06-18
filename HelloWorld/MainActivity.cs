@@ -19,15 +19,15 @@ namespace HelloWorld
 			SetContentView (Resource.Layout.Main);
 
 			Button helloWordBnt = FindViewById<Button>(Resource.Id.BtnClick);
-
+			TextView search = FindViewById<TextView>(Resource.Id.TxtSearch);
+			ListView lstView = FindViewById<ListView>(Resource.Id.lstView);
 
 
 			helloWordBnt.Click +=  async (object sender, System.EventArgs e) =>
 			{
-				var repositories = await api.GetUserRepository("rafaelcruz-net");
-
-				System.Diagnostics.Trace.WriteLine(repositories);
-
+				var text = search.Text;
+				var repositories = await api.GetUserRepository(text);
+				lstView.Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItemSingleChoice, repositories);
 			};
 
 		}
