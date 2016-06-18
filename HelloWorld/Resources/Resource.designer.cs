@@ -44,14 +44,17 @@ namespace HelloWorld
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int BtnClick = 2130968577;
+			// aapt resource value: 0x7f040002
+			public const int BtnClick = 2130968578;
 			
 			// aapt resource value: 0x7f040000
-			public const int TxtSearch = 2130968576;
+			public const int layout = 2130968576;
 			
-			// aapt resource value: 0x7f040002
-			public const int lstView = 2130968578;
+			// aapt resource value: 0x7f040003
+			public const int lstView = 2130968579;
+			
+			// aapt resource value: 0x7f040001
+			public const int txtSearch = 2130968577;
 			
 			static Id()
 			{

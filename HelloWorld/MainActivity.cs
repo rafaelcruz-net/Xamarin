@@ -19,7 +19,7 @@ namespace HelloWorld
 			SetContentView (Resource.Layout.Main);
 
 			Button helloWordBnt = FindViewById<Button>(Resource.Id.BtnClick);
-			TextView search = FindViewById<TextView>(Resource.Id.TxtSearch);
+			EditText search = FindViewById<EditText>(Resource.Id.txtSearch);
 			ListView lstView = FindViewById<ListView>(Resource.Id.lstView);
 
 
