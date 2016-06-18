@@ -26,7 +26,7 @@ namespace HelloWorld
 			{
 				var repositories = await api.GetUserRepository("rafaelcruz-net");
 
-
+				System.Diagnostics.Trace.WriteLine(repositories);
 
 			};
 

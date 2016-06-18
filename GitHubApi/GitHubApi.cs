@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace GitHubApi
 {
@@ -14,11 +15,17 @@ namespace GitHubApi
 		public async Task<List<string>> GetUserRepository(String user)
 		{
 			var client = new HttpClient();
+			client.DefaultRequestHeaders.Add("User-Agent", "Others");
+
 			var response = await client.GetAsync(String.Format(GitHubUserRepositoryUrl, user));
-			var json = response.Content.ReadAsStringAsync().Result;
+			var content = response.Content.ReadAsStringAsync().Result;
 
-			var result = JsonConvert.DeserializeObject<List<String>>(json);
+			var json = JArray.Parse(content);
 
+			var result = new List<String>();
+			foreach (var item in json)
+				result.Add(item.Value<String>("full_name"));
+				           
 			return result;
 		}
 	}
