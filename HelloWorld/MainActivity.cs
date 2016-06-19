@@ -18,6 +18,7 @@ namespace HelloWorld
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
+
 			Button helloWordBnt = FindViewById<Button>(Resource.Id.BtnClick);
 			EditText search = FindViewById<EditText>(Resource.Id.txtSearch);
 			ListView lstView = FindViewById<ListView>(Resource.Id.lstView);
