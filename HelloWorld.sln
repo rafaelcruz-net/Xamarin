@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{2346546D-2CBC-4F88-8219-30625A63B56F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubApi", "GitHubApi\GitHubApi.csproj", "{B4C09259-970E-48A0-B1E4-9175B1D9D421}"
@@ -13,11 +14,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2346546D-2CBC-4F88-8219-30625A63B56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2346546D-2CBC-4F88-8219-30625A63B56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2346546D-2CBC-4F88-8219-30625A63B56F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{2346546D-2CBC-4F88-8219-30625A63B56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2346546D-2CBC-4F88-8219-30625A63B56F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4C09259-970E-48A0-B1E4-9175B1D9D421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4C09259-970E-48A0-B1E4-9175B1D9D421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4C09259-970E-48A0-B1E4-9175B1D9D421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4C09259-970E-48A0-B1E4-9175B1D9D421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

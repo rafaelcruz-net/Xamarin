@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("HelloWorld.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Android.Resource", IsApplication=true)]
 
-namespace HelloWorld
+namespace Android
 {
 	
 	
@@ -41,20 +41,27 @@ namespace HelloWorld
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int Icon = 2130837504;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int BtnClick = 2130968578;
-			
-			// aapt resource value: 0x7f040000
-			public const int layout = 2130968576;
-			
-			// aapt resource value: 0x7f040003
-			public const int lstView = 2130968579;
-			
-			// aapt resource value: 0x7f040001
-			public const int txtSearch = 2130968577;
+			// aapt resource value: 0x7f050000
+			public const int MyButton = 2131034112;
 			
 			static Id()
 			{
@@ -69,8 +76,8 @@ namespace HelloWorld
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			// aapt resource value: 0x7f030000
+			public const int Main = 2130903040;
 			
 			static Layout()
 			{
@@ -85,8 +92,11 @@ namespace HelloWorld
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int Hello = 2130968576;
 			
 			static String()
 			{
